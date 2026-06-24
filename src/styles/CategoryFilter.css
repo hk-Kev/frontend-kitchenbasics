@@ -1,0 +1,32 @@
+.category-btns {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+.category-btns button {
+  border-radius: 50px;
+  padding: 1.5em 2em;
+  color: black;
+  background-color: white;
+  border-width: 2px;
+  margin: 0 1em;
+}
+.category-btns button:hover,
+.category-btns button:active {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .category-btns {
+    flex-wrap: wrap;
+    gap: 0.75em;
+    margin: 1.5em 0;
+    padding: 0 1em;
+  }
+  .category-btns button {
+    padding: 0.9em 1.5em;
+    margin: 0;
+  }
+}

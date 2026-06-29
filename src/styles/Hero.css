@@ -1,0 +1,53 @@
+* {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hero-section {
+  border: 1px solid #e0e0e0;
+  height: 400px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  /* margin: 0 3em; */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  background-image: url(../assets/images/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-section div {
+  margin: 3em;
+}
+#shop-btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  background-color: black;
+}
+#shop-btn:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  /* Shorter hero so it doesn't dominate the small viewport */
+  .hero-section {
+    height: 260px;
+    border-radius: 8px;
+  }
+  /* Tighten the inner spacing that pushes the button off-edge */
+  .hero-section div {
+    margin: 1.5em;
+  }
+  #shop-btn {
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+  }
+}

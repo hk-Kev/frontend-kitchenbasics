@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+.footer-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 2em;
+  background-color: #e0e0e0;
+}
+.footer-header {
+  font-size: 4ch;
+  margin: 1em 0;
+}
+.footer-nav a {
+  text-decoration: none;
+  margin: 1em;
+  color: black;
+  font-weight: bolder;
+  font-style: italic;
+}
+.footer-nav {
+  margin: 1em;
+}
+.footer-container p {
+  opacity: 0.6;
+  font-size: small;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 1.5em;
+  }
+  .footer-header {
+    font-size: 3ch;
+  }
+  /* Let footer links wrap rather than spill on narrow screens */
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  .footer-nav a {
+    margin: 0.5em;
+  }
+}
